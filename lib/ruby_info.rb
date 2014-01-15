@@ -1,5 +1,6 @@
 require 'rbconfig'
 require 'etc'
+require 'socket'
 
 module RubyInfo
   class << self
@@ -84,6 +85,13 @@ module RubyInfo
   end
 
   # # #
+  # network info
+
+  def hostname
+    Socket.gethostname
+  end
+
+  # # #
   # current info
 
   def current_file #  __FILE__
@@ -163,6 +171,7 @@ module RubyInfo
 
   # # #
   # misc
+
   def security_level
     $SAFE
   end

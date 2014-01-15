@@ -3,6 +3,7 @@
 * New method: all (Output all available information)
 * Rename platform to ruby_platform
 * Rename environment to env
+* Add hostname (Socket.gethostname)
 * Add signals and system_call_errors (Signal.list and Errno.constants)
 * Add script_lines (SCRIPT_LINES__)
 * Add encodings and encoding_aliases (Encoding.name_list and Encoding.aliases)
