@@ -1,0 +1,38 @@
+= RubyEngine {<img src="https://travis-ci.org/janlelis/ruby_engine.png" />}[https://travis-ci.org/janlelis/ruby_engine]
+
+Provides a +RubyEngine+ to simplify checking on which implementation your Ruby programs is running.
+
+== Setup
+
+On your command-line:
+
+    $ gem install ruby_engine
+
+In Ruby:
+
+    require 'ruby_engine'
+
+== Usage
+
+    # Output the interpreter name
+    RubyEngine.to_s
+
+    # true for JRuby
+    RubyEngine.is? 'jruby'
+
+    # There are some query methods defined:
+    RubyEngine.mri?
+    RubyEngine.jruby?
+    RubyEngine.rubinius?
+    RubyEngine.ree?
+    RubyEngine.ironruby?
+    RubyEngine.macruby?
+    RubyEngine.cardinal?
+
+== Also See
+
+https://github.com/janlelis/ruby_version
+
+== J-_-L
+
+Copyright (c) 2010-2014 Jan Lelis. MIT License. Originated from the zucker gem.
