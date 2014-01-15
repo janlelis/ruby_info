@@ -231,7 +231,7 @@ module RubyInfo
   end
 
   def ruby_copyright
-    defined?(::RUBY_REVISION) && ::RUBY_REVISION
+    defined?(::RUBY_COPYRIGHT) && ::RUBY_COPYRIGHT
   end
 end
 
