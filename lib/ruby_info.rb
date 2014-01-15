@@ -154,7 +154,7 @@ module RubyInfo
     Encoding.default_internal
   end
 
-  def encoding_list
+  def encodings
     Encoding.name_list
   end
 
