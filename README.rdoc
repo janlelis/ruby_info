@@ -1,4 +1,4 @@
-= Info {<img src="https://travis-ci.org/janlelis/info.png" />}[https://travis-ci.org/janlelis/info]
+= Info
 
 Provides an +Info+ class that gives you a lot of Ruby information. See Usage section for a list of accessors.
 
