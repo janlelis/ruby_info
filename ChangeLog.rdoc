@@ -11,5 +11,6 @@
 * Add user_home (Dir.home)
 * Add ruby_revision and ruby_copyright (RUBY_REVISION and RUBY_COPYRIGHT)
 * Add verbose and debug ($VERBOSE and $DEBUG)
+* Fix program_arguments
 * Moved from zucker 13.1 gem into its own gem
 

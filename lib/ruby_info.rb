@@ -27,7 +27,7 @@ module RubyInfo
   end
 
   def program_arguments
-    $:
+    $*
   end
 
   def loaded_programs
