@@ -1,5 +1,6 @@
 === 1.0.0 / 2014-01-15
 
+* New method: all (Output all available information)
 * Rename platform to ruby_platform
 * Rename environment to env
 * Add encoding_list and encoding_aliases (Encoding.name_list and Encoding.aliases)

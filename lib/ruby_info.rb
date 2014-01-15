@@ -8,7 +8,11 @@ module RubyInfo
     end
 
     def list
-      singleton_methods - [:[], :list, '[]', 'list']
+      singleton_methods.map(&:to_sym) - [:[], :list, :all]
+    end
+
+    def all
+      Hash[ list.map{ |l| [l, self.public_send(l)] }]
     end
   end
 

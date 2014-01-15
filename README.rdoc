@@ -1,6 +1,6 @@
 = RubyInfo
 
-Provides a +RubyInfo+ class that simplifies accessing global information. Run <tt>RubyInfo.list</tt> to get started.
+Provides a +RubyInfo+ class that simplifies accessing global information. Run <tt>RubyInfo.list</tt> to get started. You can also run <tt>RubyInfo.all</tt> to get a hash of all available information.
 
 == Setup
 
