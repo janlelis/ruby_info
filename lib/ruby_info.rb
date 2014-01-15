@@ -199,6 +199,14 @@ module RubyInfo
     Object.constants
   end
 
+  def system_call_errors
+    Errno.constants
+  end
+
+  def signals
+    Signal.list
+  end
+
   # # #
   # ruby info
 
