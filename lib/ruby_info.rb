@@ -34,7 +34,11 @@ module RubyInfo
   end
 
   def program_data
-    ::DATA
+    defined?(::DATA) && DATA
+  end
+
+  def script_lines
+    defined?(::SCRIPT_LINES__) && SCRIPT_LINES__
   end
 
   def child_program_status
