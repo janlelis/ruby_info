@@ -14,13 +14,13 @@ In Ruby:
 
 == Usage
 
-Call methods on the +RubyInfo+ class. See source for more documentation.
+Call methods on the +RubyInfo+ class. See the source for more documentation.
 
 == Also See
 
-* https://github.com/janlelis/ruby_engine
-* https://github.com/janlelis/ruby_version
-* https://github.com/os/rdp
+https://github.com/janlelis/ruby_engine |
+https://github.com/janlelis/ruby_version |
+https://github.com/os/rdp
 
 == J-_-L
 
