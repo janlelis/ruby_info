@@ -2,6 +2,7 @@ require 'rbconfig'
 require 'etc'
 require 'socket'
 
+
 module RubyInfo
   class << self
     def [](what)
