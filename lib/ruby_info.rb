@@ -51,7 +51,6 @@ module RubyInfo
   def env
     ::ENV
   end
-  alias environment env
 
   def os
     RbConfig::CONFIG['host_os']
