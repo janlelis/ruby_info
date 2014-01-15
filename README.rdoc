@@ -1,16 +1,16 @@
-= Info
+= RubyInfo
 
-Provides an +Info+ class that gives you a lot of Ruby information. See Usage section for a list of accessors.
+Provides a +RubyInfo+ class that simplifies accessing global information. Run <tt>RubyInfo.list</tt> to get started.
 
 == Setup
 
 On your command-line:
 
-    $ gem install info
+    $ gem install ruby_info
 
 In Ruby:
 
-    require 'info'
+    require 'ruby_info'
 
 == Usage
 

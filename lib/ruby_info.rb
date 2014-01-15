@@ -1,9 +1,7 @@
-require 'zucker'
 require 'rbconfig'
 require 'etc'
-module Zucker Info = true end
 
-module Info
+module RubyInfo
   class << self
     # hash like access
     def [](what)
