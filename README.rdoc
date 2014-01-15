@@ -14,7 +14,7 @@ In Ruby:
 
 == Usage
 
-    # ...
+    Call methods on the +RubyInfo+ class. See source for more documentation.
 
 == Also See
 

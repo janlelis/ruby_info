@@ -154,11 +154,6 @@ module RubyInfo
     Object.constants
   end
 
-  # encoding (1.9)
-  #def source_encoding
-  #  __ENCODING__
-  #end
-
   def external_encoding
     Encoding.default_external
   end
@@ -168,7 +163,7 @@ module RubyInfo
   end
 
   # ruby version info
-  def ruby_version # also see the RubyVersion cube
+  def ruby_version # also see the ruby_version gem
     ::RUBY_VERSION
   end
 
@@ -184,7 +179,7 @@ module RubyInfo
     ::RUBY_RELEASE_DATE
   end
 
-  def ruby_engine # warning! not support by every implementation. It's saver to use the RubyEngine cube
+  def ruby_engine # warning! not support by every implementation. It's saver to use the ruby_engine gem
     ::RUBY_ENGINE
   end
 end
