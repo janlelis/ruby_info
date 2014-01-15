@@ -146,6 +146,14 @@ module RubyInfo
     Encoding.default_internal
   end
 
+  def encoding_list
+    Encoding.name_list
+  end
+
+  def encoding_aliases
+    Encoding.aliases
+  end
+
   # # #
   # misc
   def security_level
