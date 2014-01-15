@@ -19,7 +19,10 @@ In Ruby:
 == Also See
 
 https://github.com/janlelis/ruby_engine
+
 https://github.com/janlelis/ruby_version
+
+https://github.com/os/rdp
 
 == J-_-L
 
