@@ -2,8 +2,9 @@ require 'rbconfig'
 require 'etc'
 require 'socket'
 
-
 module RubyInfo
+  VERSION = '1.0.1'
+
   class << self
     def [](what)
       send what

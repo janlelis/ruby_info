@@ -1,5 +1,7 @@
-=== 1.0.0 / 2014-01-15
+=== 1.0.1 / 2014-01-15
+* Fix VERSION constant
 
+=== 1.0.0 / 2014-01-15
 * New method: all (Output all available information)
 * Rename platform to ruby_platform
 * Rename environment to env

@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-require File.expand_path('../lib/ruby_info/version', __FILE__)
+require File.expand_path('../lib/ruby_info', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "ruby_info"
