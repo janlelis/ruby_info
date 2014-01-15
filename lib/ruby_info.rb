@@ -3,12 +3,10 @@ require 'etc'
 
 module RubyInfo
   class << self
-    # hash like access
     def [](what)
       send what
     end
 
-    # list available info methods
     def list
       singleton_methods - [:[], :list, '[]', 'list']
     end
@@ -16,20 +14,9 @@ module RubyInfo
 
   module_function
 
-  # input
-  def last_input_file
-    $FILENAME
-  end
+  # # #
+  # program info
 
-  def last_input_line_number
-    $.
-  end
-
-  def last_input
-    $_
-  end
-
-  # program
   def program_name
     $0
   end
@@ -50,15 +37,13 @@ module RubyInfo
     $CHILD_STATUS
   end
 
+  # # #
   # system info
-  def environment
+
+  def env
     ::ENV
   end
-  alias env environment
-
-  def working_directory
-    Dir.pwd
-  end
+  alias environment env
 
   def os
     RbConfig::CONFIG['host_os']
@@ -72,7 +57,9 @@ module RubyInfo
     $:
   end
 
-  # user
+  # # #
+  # user info
+
   def user_login
     Etc.getlogin
   end
@@ -81,10 +68,15 @@ module RubyInfo
     Etc.getpwnam(user_login).gecos.split(',')[0]
   end
 
-  # current
+  # # #
+  # current info
 
   def current_file #  __FILE__
     return $` if caller[0].rindex(/:\d+(:in `.*')?$/)
+  end
+
+  def working_directory
+    Dir.pwd
   end
 
   def current_file_directory
@@ -107,7 +99,21 @@ module RubyInfo
     caller
   end
 
-  # dealing with strings
+  # # #
+  # input / string info
+
+  def last_input_file
+    $FILENAME
+  end
+
+  def last_input_line_number
+    $.
+  end
+
+  def last_input
+    $_
+  end
+
   def gets_separator
     $/
   end
@@ -124,32 +130,6 @@ module RubyInfo
     $;
   end
 
-  # misc
-  def security_level
-    $SAFE
-  end
-
-  def warnings_activated?
-    $VERBOSE
-  end
-
-  def debug_activated?
-    $DEBUG
-  end
-
-  def last_exception
-    $!
-  end
-
-  # defined objects
-  def global_variables
-    Object.send :global_variables
-  end
-
-  def global_constants
-    Object.constants
-  end
-
   def external_encoding
     Encoding.default_external
   end
@@ -158,7 +138,46 @@ module RubyInfo
     Encoding.default_internal
   end
 
+  # # #
+  # misc
+  def security_level
+    $SAFE
+  end
+
+  def verbose
+    $VERBOSE
+  end
+
+  def warnings_activated?
+    !! $VERBOSE
+  end
+
+  def debug
+    $DEBUG
+  end
+
+  def debug_activated?
+    !! $DEBUG
+  end
+
+  def last_exception
+    $!
+  end
+
+  # # #
+  # ruby objects
+
+  def global_variables
+    Object.send :global_variables
+  end
+
+  def global_constants
+    Object.constants
+  end
+
+  # # #
   # ruby info
+
   def ruby_version # also see the ruby_version gem
     ::RUBY_VERSION
   end
