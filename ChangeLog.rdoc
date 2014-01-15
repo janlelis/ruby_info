@@ -3,6 +3,7 @@
 * Rename platform to ruby_platform
 * Rename environment to env
 * Add gc (GC.stat)
+* Add user_home (Dir.home)
 * Add ruby_revision and ruby_copyright (RUBY_REVISION and RUBY_COPYRIGHT)
 * Add verbose and debug ($VERBOSE and $DEBUG)
 * Moved from zucker 13.1 gem into its own gem

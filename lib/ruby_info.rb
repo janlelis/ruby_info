@@ -72,6 +72,10 @@ module RubyInfo
     Etc.getpwnam(user_login).gecos.split(',')[0]
   end
 
+  def user_home
+    Dir.home
+  end
+
   # # #
   # current info
 
