@@ -57,6 +57,10 @@ module RubyInfo
     $:
   end
 
+  def gc
+    GC.stat
+  end
+
   # # #
   # user info
 
