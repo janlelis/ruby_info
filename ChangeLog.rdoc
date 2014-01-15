@@ -1,4 +1,6 @@
 === 1.0.0 / 2014-01-15
 
+* Rename platform to ruby_platform
+* Add ruby_revision and ruby_copyright
 * Moved from zucker 13.1 gem into its own gem
 

@@ -60,10 +60,6 @@ module RubyInfo
     Dir.pwd
   end
 
-  def platform
-    ::RUBY_PLATFORM
-  end
-
   def os
     RbConfig::CONFIG['host_os']
   end
@@ -162,7 +158,7 @@ module RubyInfo
     Encoding.default_internal
   end
 
-  # ruby version info
+  # ruby info
   def ruby_version # also see the ruby_version gem
     ::RUBY_VERSION
   end
@@ -179,8 +175,20 @@ module RubyInfo
     ::RUBY_RELEASE_DATE
   end
 
-  def ruby_engine # warning! not support by every implementation. It's saver to use the ruby_engine gem
-    ::RUBY_ENGINE
+  def ruby_engine # also see the ruby_engine gem
+    defined?(::RUBY_ENGINE) && ::RUBY_ENGINE
+  end
+
+  def ruby_platform
+    ::RUBY_PLATFORM
+  end
+
+  def ruby_revision
+    defined?(::RUBY_REVISION) && ::RUBY_REVISION
+  end
+
+  def ruby_copyright
+    defined?(::RUBY_REVISION) && ::RUBY_REVISION
   end
 end
 
