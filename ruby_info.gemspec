@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.description   = 'Provides a RubyInfo class that simplifies accessing global information. Run RubyInfo.list to get started.'
   gem.license       = "MIT"
   gem.authors       = ["Jan Lelis"]
-  gem.email         = "mail@janlelis.de"
+  gem.email         = ["hi@ruby.consulting"]
   gem.homepage      = "https://github.com/janlelis/ruby_info"
 
   gem.files         = Dir['{**/}{.*,*}'].select { |path| File.file?(path) }
